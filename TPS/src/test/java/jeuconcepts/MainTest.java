@@ -1,4 +1,3 @@
-package jeuconcepts;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -20,7 +19,7 @@ public class MainTest {
         System.setOut(originalOut);
 
         String output = outContent.toString();
-        assertTrue(output.contains("Bienvenue dans Jeu de concepts version 1.0!"),
+        assertTrue(output.contains("Bienvenue dans la POO en Java version 1.0!"),
             "Le message de bienvenue doit être affiché");
     }
 }
