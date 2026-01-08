@@ -1,14 +1,3 @@
-# Projet Révisions d'été Java : Jeu de Combat de Personnages
-
-Ce projet est un petit jeu de combat entre 2 équipes de personnages créé par Hervé l'Helguen.
-C'est un projet utilisé en devoir de vacances d'été pour les étudiants de SIO1-SLAM. La consigne du travail est donnée dans le fichier `sujet.md` situé dans le dossier `sujet&classes_fournies/sujet`.
-
-Les classes Reservoir et le programme principal final sont également donnés dans ce dossier. Les fichiers de tests unitaires pour valider vos méthodes également.
-
-> ℹ️ **Remarque enseignants :**
-> - La branche Main contient le projet à réaliser.
-> - La branche correction contient le corrigé du projet.
-
 ## Lancer le projet
 Pour lancer le projet, il faut faire un clic droit sur le fichier `Main.java` dans l'explorateur de fichiers et choisir "Run Java".
 
@@ -23,8 +12,7 @@ Lorsque le débogueur est lancé, il est possible de visualiser les variables, l
 
 ## tests unitaires
 Le projet contient des tests unitaires pour vérifier le bon fonctionnement du code. Ces tests doivent être situés dans le dossier `src/test/java`. Ils sont écrits en utilisant JUnit 5.
-Pour , il est nécessaire d'avoir Maven installé dans le Codespace. Maven est déjà configuré dans ce projet.
-Vous trouverez des modèles de tests dans le dossier `sujet&classes_fournies/test-unitaires`.
+Il est nécessaire d'avoir Maven installé dans le Codespace. Maven est déjà configuré dans ce projet.
 
 Pour exécuter les tests unitaires, il faut faire un clic droit sur un fichier de test dans l'explorateur de fichiers et choisir "Run Tests" ou "Debug Tests".
 
@@ -32,7 +20,7 @@ L'icône de lecture dans la barre d'outils en haut de l'éditeur permet égaleme
 
 Enfin, il est possible de lancer les tests unitaires en utilisant la commande Maven suivante dans le terminal :
 ```bash
-cd /workspaces/test-java/revisions
+cd /workspaces/test-java/tps
 mvn test
 ```
 
@@ -44,21 +32,15 @@ Le projet est organisé selon une structure standard de projet Java avec Maven. 
 src
 ├── main
 │   └── java
-│       └── jeuconcepts
-│           ├── Arme.java
-│           ├── Jeu.java
-│           ├── Main.java
-│           ├── Personnage.java
-│           └── Reservoir.java
+│       └── Main.java
 └── test
     └── java
-        └── jeuconcepts
-            ├── ArmeTest.java
-            └── JeuTest.java
+        └── MainTest.java
+    
 ```
 
 
-Les fichiers sources Java se trouvent dans le dossier `src/main/java/jeuconcepts`, tandis que les tests unitaires sont situés dans le dossier `src/test/java/jeuconcepts`.
+Les fichiers sources Java se trouvent dans le dossier `src/main/java/`, tandis que les tests unitaires sont situés dans le dossier `src/test/java/`.
 Les ressources du projet, telles que les fichiers de configuration, peuvent être placées dans le dossier `src/main/resources`.
 Les fichiers compilés seront générés dans le dossier `target` à la racine du projet. Ce dossier est créé automatiquement par Maven lors de la compilation du projet. Il n'est pas nécessaire de le modifier manuellement. Il contient les classes compilées, les dépendances et d'autres fichiers nécessaires à l'exécution du projet. Il n'est pas nécessaire de le versionner dans Git, car il est généré automatiquement à chaque compilation, c'est pourquoi il est ignoré au niveau du fichier `.gitignore` pour éviter de le versionner.
 
@@ -69,5 +51,5 @@ mvn compile
 ```
 Si vous souhaitez lancer le projet depuis un terminal, sans passer par l'éditeur, cette dernière commande sera utile :
 ```bash
-mvn exec:java -Dexec.mainClass="jeuconcepts.Main"
+mvn exec:java -Dexec.mainClass="Main"
 ```

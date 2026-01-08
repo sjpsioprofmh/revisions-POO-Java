@@ -36,7 +36,8 @@
 			],
 			"settings": {
 				"cSpell.language": "en,fr",
-				"editor.wordWrap": "on" 
+				"editor.wordWrap": "on",
+				"java.server.launchMode": "Standard"
 			}
 		}
 	}
